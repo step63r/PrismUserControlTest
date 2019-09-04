@@ -94,9 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Prism.Wpf" Version="7.1.0.431&#xD;" />
-    <PackageReference Include="ReactiveProperty">
-      <Version>6.1.2</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
