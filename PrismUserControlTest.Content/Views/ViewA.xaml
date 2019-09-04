@@ -10,6 +10,12 @@
              xmlns:v="clr-namespace:PrismUserControlTest.Content.Views"
              xmlns:vm="clr-namespace:PrismUserControlTest.Content.ViewModels"
              prism:ViewModelLocator.AutoWireViewModel="True" >
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type vm:SampleUserControlViewModel}">
+            <v:SampleUserControl />
+        </DataTemplate>
+    </UserControl.Resources>
+    
     <Grid Background="AliceBlue">
         <ScrollViewer VerticalScrollBarVisibility="Auto" CanContentScroll="True">
             <ItemsControl ItemsSource="{Binding UserControls}">
@@ -18,11 +24,11 @@
                         <StackPanel Orientation="Vertical" />
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
-                <ItemsControl.ItemTemplate>
+                <!--<ItemsControl.ItemTemplate>
                     <DataTemplate DataType="{x:Type vm:SampleUserControlViewModel}">
                         <v:SampleUserControl />
                     </DataTemplate>
-                </ItemsControl.ItemTemplate>
+                </ItemsControl.ItemTemplate>-->
             </ItemsControl>
         </ScrollViewer>
     </Grid>
