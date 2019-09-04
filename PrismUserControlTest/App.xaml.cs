@@ -1,8 +1,8 @@
-﻿using PrismUserControlTest.Views;
-using Prism.Ioc;
+﻿using Prism.Ioc;
 using Prism.Modularity;
-using System.Windows;
 using PrismUserControlTest.Content;
+using PrismUserControlTest.Views;
+using System.Windows;
 
 namespace PrismUserControlTest
 {
